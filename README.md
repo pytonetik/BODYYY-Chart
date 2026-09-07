@@ -1,38 +1,28 @@
-# BodyChart
+# BODYYY Chart
 
-Physiotherapy body-chart app for general assessment.
+Latest app is a Vite + React clinic body-chart (not the earlier single-file HTML).
 
-## V1
+The 8 Sep 2026 workspace zip is a full Grok app-builder project (~493 files, including `.grok` internals). A cleaned source tree (no `.grok`, screenshots, or Vercel output) is `bodychart-latest-src.zip` in the Grok project folder.
 
-- Four views on one canvas: posterior, left lateral, anterior, right lateral
-- Adult male vector outlines
-- Symbols only (no area shading)
-- Whole-canvas zoom and pan (mouse wheel, pinch, HUD buttons)
-- Session header: date/time by default; name and ID optional
-- Local Save / Open JSON only — no patient database
-- Export PNG: white background, black figures, recorded symbols
-- PNG / JSON filename: `YYYYMMDDHHmm` + optional name or ID + `Body Chart`
+## What this repo has now
 
-## Open on clinic PC or tablet
+- Earlier V1 static files: `index.html`, `app.js`, `figures.js`, `chart.js`
+- This README
 
-1. Download `index.html`
-2. Open it in Chrome / Edge / Safari
-3. Chart locally. Use **Save** for the editable file and **Export PNG** for the patient copy
+The full latest source was **not** fully committed file-by-file from Grok (150+ files plus figure `.webp` plates). Upload the cleaned zip on GitHub if you want the complete tree on `main`:
 
-Do not commit exported PNGs or chart files that contain names or IDs.
+1. Open https://github.com/pytonetik/Interactive-Body-Chart
+2. Add file → Upload files
+3. Drop `bodychart-latest-src.zip` **or** unzip it first and drop the folders (`src/`, `public/`, `scripts/`, `package.json`, …)
+4. Commit to `main`
 
-## Symbols
+Unzip-on-GitHub does not expand a zip into folders. Prefer unzipping on a computer, then upload the folder contents.
 
-1. Pain (filled circle)
-2. Tender joint
-3. Adhesion
-4. Friction
-5. Inflammation
-6. Hypersensitivity
-7. Spasm
-8. Trigger point
-9. Elevation
+## Latest app (from the zip)
 
-Callout notes are optional. A symbols-only chart is valid.
+- Name in UI: **BODYYY Chart** — Quiet Charting
+- Four views, symbol charting, callouts, local file save/open, PNG export
+- Stack: Vite, TanStack Router, React 19
+- Run (after unzip): `npm install` then `npm run dev`
 
-Online / PWA install is on hold.
+Do not commit patient JSON/PNG exports.
