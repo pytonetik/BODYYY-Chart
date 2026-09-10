@@ -1,20 +1,20 @@
 # BODYYY Chart
 
-Empty physiotherapy body-chart tool (static `index.html` + JS).
+Quiet Charting👌
 
-**Live:** https://pytonetik.github.io/BODYYY-Chart/
+This repository is the **source backup** of the BODYYY Chart app (four-view physiotherapy body chart).
 
-Repo: https://github.com/pytonetik/BODYYY-Chart
+## What this is
+- Current working copy of the Grok Build app
+- Four figures: Anterior → Posterior → Left lateral → Right lateral
+- Marks, Details, referred / radiating, Save JSON, Print PNG/PDF
 
-## Clinic use
+## Run locally
+```bash
+npm install
+npm run dev
+```
 
-Open the live link on a clinic PC or tablet.
-Use **Save** for the editable JSON and **Export PNG** for the patient copy.
-Do not upload charts that contain names or IDs.
+This is **not** a GitHub Pages live site. The in-chat Grok preview is the running app. Grok Publish to grok.me was failing on the platform when this backup was made (2026-09-11).
 
-## Files that run on Pages
-
-- `index.html`
-- `app.js`
-- `figures.js`
-- `chart.js`
+© 2026 AidenPYT. All rights reserved.

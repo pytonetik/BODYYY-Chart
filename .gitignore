@@ -1,7 +1,13 @@
-*.json
-!package.json
-*Body Chart.png
-*Body Chart.json
+node_modules
+.vercel
+dist
+.output
+.tanstack
+screenshots
+attachments
+.grok
+artifacts
+*.zip
 .DS_Store
-patient/
-exports/
+.env
+.env.local

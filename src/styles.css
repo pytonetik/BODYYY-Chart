@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: swap;
+  src: url("/fonts/IBMPlexSans.woff2") format("woff2");
+}
+
+@theme {
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+
+  --color-background: #0a0b0c;
+  --color-foreground: #eceae4;
+  --color-card: #121315;
+  --color-card-foreground: #eceae4;
+  --color-popover: #17181a;
+  --color-popover-foreground: #eceae4;
+  --color-primary: #d8d4cc;
+  --color-primary-foreground: #0a0b0c;
+  --color-secondary: #1c1e21;
+  --color-secondary-foreground: #eceae4;
+  --color-muted: #181a1c;
+  --color-muted-foreground: #9a9891;
+  --color-accent: #222427;
+  --color-accent-foreground: #eceae4;
+  --color-destructive: #e23b2e;
+  --color-destructive-foreground: #fff8f6;
+  --color-border: #2a2c2f;
+  --color-input: #2a2c2f;
+  --color-ring: #d8d4cc;
+  --color-canvas: #050506;
+  --color-figure: #e8e6e1;
+  --color-figure-dim: #8a8882;
+  --color-chrome: #0a0b0c;
+  --color-chrome-bar: #121315;
+  --color-chrome-fg: #eceae4;
+
+  --color-mark-pain: #e23b2e;
+  --color-mark-tender-joint: #c41e3a;
+  --color-mark-tenderness: #e07a2f;
+  --color-mark-numbness: #3d9b64;
+  --color-mark-paresthesia: #2b7fdb;
+  --color-mark-weakness: #3a4a8c;
+  --color-mark-trigger: #d4a017;
+  --color-mark-radiation: #5ba3b5;
+  --color-mark-inflammation: #d4526e;
+  --color-mark-swelling: #c76b8a;
+  --color-mark-spasm: #1a9b8e;
+  --color-mark-adhesion: #c4bfb6;
+  --color-mark-friction: #b08968;
+  --color-mark-hypomobility: #8a8580;
+  --color-mark-hypermobility: #d6d3cd;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius: 10px;
+
+  --shadow-border: 0 0 0 1px rgb(255 255 255 / 0.08);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html,
+  body,
+  #app {
+    min-height: 100%;
+    background: #0a0b0c;
+    color: #eceae4;
+    color-scheme: dark;
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  .app-chrome {
+    background-color: #0a0b0c;
+    color: #eceae4;
+    color-scheme: dark;
+  }
+
+  .app-chrome-bar {
+    background-color: #121315;
+    color: #eceae4;
+    color-scheme: dark;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
